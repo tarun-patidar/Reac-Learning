@@ -1,0 +1,42 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem ;
+}
+
+.profile-card{
+    background: linear-gradient(to top, #2a839e, #ffffff);
+    border-radius: 10px;
+    max-width: 250px;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(44, 36, 36, 0.1);
+    transition: filter 0.3s ease;
+}
+.profile-card__title {
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+.profile-card__summary {
+    margin-top: 1em;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.profile-card:hover ,
+.profile-card:focus {
+    filter: drop-shadow(0 0 1em #2a839e);
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all .2s linear;
+}
+
+.profile-card__pic{
+    height: 10em;
+    border-radius: 10%;
+}

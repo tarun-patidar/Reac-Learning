@@ -1,0 +1,24 @@
+.hero-banner:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hero-banner.hero-banner__landing-page {
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3rem;
+}
+.hero-banner.hero-banner__landing-page h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #0c0000;
+}
+
+.hero-banner.hero-banner__landing-page p {
+    font-size: 1.5rem;
+    color: #0c0000;
+    margin-bottom: 10px;
+    max-width: 20em;
+}
