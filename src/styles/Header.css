@@ -45,9 +45,10 @@
     color: white;
     font-size: 1rem;
 }
-.header__menu-hamburger{
-        visibility: hidden;
-        display: none;
+
+.header__menu-hamburger {
+    visibility: hidden;
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -55,11 +56,13 @@
         margin: 0;
         background-color: #B94A15;
     }
+
     .header__title {
         font-size: 1.5rem;
         z-index: 10;
         margin: 0;
     }
+
     .header__menu-hamburger {
         display: block;
         background: none;
@@ -74,15 +77,21 @@
         margin-top: 10px;
     }
 
+    .header__menu-hamburger {
+        visibility: visible;
+        display: block;
+    }
+
     .header__nav.header__navMobile--open {
         display: block;
-        flex-direction: column;;
+        flex-direction: column;
+        ;
         top: 28px;
         position: absolute;
         left: 0;
         width: 100%;
         padding: 20px 0;
-        background : linear-gradient(to bottom, #B94A15, #000000);
+        background: linear-gradient(to bottom, #B94A15, #000000);
     }
 
     .header__nav ul {
