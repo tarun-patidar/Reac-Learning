@@ -1,19 +1,24 @@
-import Cards from './components/Cards'
-import HeroBanner from './components/HeroBanner'
-import heroImage from './assets/mesh-network.jpg'
+import LandingPage from "./screens/LandingPage";
+import {BrowserRouter, Route, Routes } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <>
-      <HeroBanner
-        image={heroImage}
-        className='hero-banner__landing-page'
-        title="Hello There"
-        subtitle="I'm excited to show you all my skills through demo, let's get started!"
-      />
-      <Cards />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

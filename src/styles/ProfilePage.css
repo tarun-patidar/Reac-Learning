@@ -1,0 +1,80 @@
+.container {
+    color: #fff;
+    position: relative;
+}
+
+.timeline {
+    width: 0px;
+    position:absolute;
+    height: 100%;
+    background-color: #B94A15;
+    left: 50%;
+    transform: translateY(5%);
+}
+
+.profile-page__content {
+    padding: 20px;
+    margin: 0px 100px;
+    
+}
+
+.profile-page__content-left {
+    left:0;
+    text-align: left;
+}
+
+.profile-page__content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.profile-page__description {
+    max-width: 700px;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.profile-page__content h3 {
+    padding: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.profile-page__skills {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
+.profile-page__skill-java,
+.profile-page__skill-js,
+.profile-page__skill-react,
+.profile-page__skill-html,
+.profile-page__skill-css,
+.profile-page__skill-database {
+    padding-bottom: 10px;
+}
+
+.profile-page__skill-java:hover,
+.profile-page__skill-css:hover,
+.profile-page__skill-html:hover,
+.profile-page__skill-database:hover,
+.profile-page__skill-js:hover,
+.profile-page__skill-react:hover{
+    transform: scale(1.1);
+    transition: all .6s ease;
+}
+
+@media (max-width: 768px) {
+    .profile-page__content {
+        margin: 150px 20px;
+    }
+    .profile-page__description {
+        font-size: 1.2rem;
+    }
+    .profile-page__content h2 {
+        font-size: 1.3rem;
+    }
+}

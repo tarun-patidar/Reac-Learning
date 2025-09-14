@@ -1,69 +1,42 @@
-# React + TypeScript + Vite
+# My Portfolio Web Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Learning
+A modern React + Vite learning platform showcasing full stack developer features, interactive 3D design (Spline), and a beautiful UI.
 
-Currently, two official plugins are available:
+Features
+⚡ Built with React, TypeScript, and Vite
+🎨 Custom components: Cards, HeroBanner, Header, ProgressBar, etc.
+🖼️ Asset management and reusable constants
+🧑‍💻 Profile page with skills, projects, and timeline
+📦 Modular CSS/SCSS styling
+🚀 Routing with react-router-dom
+🕹️ 3D interactive experiences using Spline
+📊 Progress bars and skill visualizations
+📨 Social icons (email, phone, GitHub, LinkedIn)
+🖱️ Responsive and interactive UI
+Getting Started
+Install dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Run the development server: npm run dev
 
-## Expanding the ESLint configuration
+Open in browser: Visit http://localhost:5173 (or as shown in terminal).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Project Structure
+Usage
+Edit components in components to customize cards, banners, etc.
+Add new pages in screens and update routing in App.tsx.
+Update styles in styles for custom themes.
+3D Integration
+Uses Spline for interactive 3D scenes.
+See HeroBanner.tsx for example usage.
+Technologies
+React
+TypeScript
+Vite
+Spline
+react-router-dom
+react-icons
+SCSS/CSS Modules
+Contributing
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This is simple portfolio site for my learning, open for any feedback or suggestions
