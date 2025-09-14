@@ -1,8 +1,5 @@
-.hero-banner:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 .hero-banner.hero-banner__landing-page {
-    margin: 20px;
+    margin: 50px 20px;
 }
 
 .hero-banner__content{
@@ -18,11 +15,11 @@
     position: absolute;
     top: 30px;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero-banner.hero-banner__landing-page h1{
-    font-size: 3rem;
+    font-size: 1.7rem;
     margin-bottom: 20px;
     color: #fff;
 }
@@ -32,4 +29,17 @@
     color: #fff;
     margin-bottom: 10px;
     max-width: 20em;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-banner__spline {
+        display: none;
+    }
+    .hero-banner.hero-banner__landing-page h1{
+        font-size: 1.5rem;
+    }
+    .hero-banner.hero-banner__landing-page p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
 }

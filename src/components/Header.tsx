@@ -1,13 +1,25 @@
 import "./../styles/Header.css";
+import 'boxicons/css/boxicons.min.css';
+import { useState } from "react";
+
 export default function Header() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  const toggleMenu = () => {
+    const navSelector = document.querySelector('.header__nav');
+    if (isMenuOpen) {
+      navSelector?.classList.add('header__navMobile--open');
+    } else {
+      navSelector?.classList.remove('header__navMobile--open');
+    }
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <header className="header">
       <h1
-        style={{
-          fontSize: "3rem",
-          fontFamily: "fantasy",
-          zIndex: 10,
-        }}
+        className="header__title"
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1000"
@@ -73,6 +85,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <button className="header__menu-hamburger" onClick={toggleMenu} aria-label="Toggle Menu">
+        <i className="bx bx-menu"></i>
+      </button>
     </header>
   );
 }
