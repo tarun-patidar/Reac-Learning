@@ -8,7 +8,7 @@ import ProfilePage from "./ProfilePage";
 function LandingPage() {
 
     useEffect(() => {
-        document.title = "Welcome";
+        document.title = "My Portfolio";
     },[]);
 
     return (
